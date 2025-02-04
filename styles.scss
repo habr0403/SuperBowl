@@ -1,5 +1,5 @@
 
-$primary-color: #5d0719;
+$primary-color: #fa0d40;
 $hover-color: darken($primary-color, 85%);
 $font-stack: "Arial", sans-serif;
 $spacing: 30px;
@@ -23,7 +23,7 @@ $spacing: 30px;
     .btn {
         @include button-styles;
         background-color: hsl(50, 56%, 81%);
-        color: rgb(77, 28, 211);
+        color: rgb(12, 236, 101);
 
         &:hover {
             background-color: $hover-color; 

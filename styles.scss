@@ -1,45 +1,48 @@
 // Variables
 $primary-color: #ec5b0c;
 $hover-color: darken($primary-color, 50%);
-$font-stack: 'Arial', sans-serif;
+$font-stack: "Arial", sans-serif;
 $spacing: 20px;
 
 // Mixins for reusable styles
 @mixin button-styles {
-  padding: $spacing * 2.5;
-  border: none;
-  border-radius: $spacing / 4;
+    padding: $spacing * 2.5;
+    border: none;
+    border-radius: $spacing / 4;
 }
 
 // Nested styles for organization
 .container {
-  font-family:serif $font-stack;
-  
-  h1 {
-      margin-bottom: $spacing * 2;
-      text-align: center;      
-   }
+    font-family: serif $font-stack;
 
-   .btn {
-       @include button-styles;
-       background-color: $primary-color;
-       color: rgb(77, 28, 211);
+    h1 {
+        margin-bottom: $spacing * 2;
+        text-align: center;
+    }
 
-       &:hover {
-           background-color: $hover-color; // Hover effect transition 
-           cursor:pointer; // Change cursor on hover
-           transition-duration : .3s; // Smooth transition 
-       }
-   }
-   
-   .content {
-      text-align:center;
+    .btn {
+        @include button-styles;
+        background-color: $primary-color;
+        color: rgb(77, 28, 211);
 
-      .reveal-btn {
-          @include button-styles; 
-          margin-top:$spacing ;
-          background-color:$primary-color ;
-          
-          &:hover{
-              background-color: bisque; 
-          }}}}
+        &:hover {
+            background-color: $hover-color; // Hover effect transition
+            cursor: pointer; // Change cursor on hover
+            transition-duration: 0.3s; // Smooth transition
+        }
+    }
+
+    .content {
+        text-align: center;
+
+        .reveal-btn {
+            @include button-styles;
+            margin-top: $spacing;
+            background-color: $primary-color;
+
+            &:hover {
+                background-color: bisque;
+            }
+        }
+    }
+}

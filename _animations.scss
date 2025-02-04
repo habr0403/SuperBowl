@@ -2,73 +2,77 @@
 
 // Define keyframes for animations
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    
-    40% {
-      transform: translateY(-30px);
-    }
-    
-    60% {
-      transform: translateY(-15px);
-     }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
-  
-  @keyframes fadeIn {
-     from {
-       opacity: 0;
-     }
-  
-     to {
-       opacity: 1;
-     }
+
+  40% {
+    transform: translateY(-30px);
   }
-  
-  @keyframes spin {
-     from {
-       transform: rotate(0deg);
-     }
-  
-     to {
-       transform: rotate(360deg);
-     }
+
+  60% {
+    transform: translateY(-15px);
   }
-  
-  // Bouncing effect for Super Bowl logo or elements
-  .bounce-animation {
-      animation: bounce ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  // Fade-in effect for sections or elements when they come into view
-  .fade-in-animation { 
-      animation: fadeIn ease forwards; 
+
+  to {
+    opacity: 1;
   }
-  
-  // Spin effect for football images or icons
-  .spin-animation { 
-      animation: spin linear infinite; 
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  // Example usage of animation classes in your styles (optional)
-  // Adjust duration and timing functions as needed
-  .logo { 
-      width: auto; // adjust based on your logo size
-      &.bounce-animation { 
-          animation-duration: .5s; // Customize duration here if needed
-          display:inline-block;
-        }  
+
+  to {
+    transform: rotate(360deg);
   }
-  
-  .section { 
-        &.fade-in-animation { 
-            animation-duration: .8s; // Customize duration here if needed   
-        }  
+}
+
+// Bouncing effect for Super Bowl logo or elements
+.bounce-animation {
+  animation: bounce ease-in-out infinite;
+}
+
+// Fade-in effect for sections or elements when they come into view
+.fade-in-animation {
+  animation: fadeIn ease forwards;
+}
+
+// Spin effect for football images or icons
+.spin-animation {
+  animation: spin linear infinite;
+}
+
+// Example usage of animation classes in your styles (optional)
+// Adjust duration and timing functions as needed
+.logo {
+  width: auto; // adjust based on your logo size
+
+  &.bounce-animation {
+    animation-duration: 0.5s; // Customize duration here if needed
+    display: inline-block;
   }
-  
-  .icon-football {    
-        &.spin-animation {     
-            animation-duration:.8s;         // Customize duration here if needed    
-        }     
+}
+
+.section {
+  &.fade-in-animation {
+    animation-duration: 0.8s; // Customize duration here if needed
   }
-  
+}
+
+.icon-football {
+  &.spin-animation {
+    animation-duration: 0.8s; // Customize duration here if needed
+  }
+}

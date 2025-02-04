@@ -1,74 +1,54 @@
-
 @keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
+  0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
-
   40% {
     transform: translateY(-30px);
   }
-
   60% {
     transform: translateY(-15px);
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 10;
   }
 }
-
 @keyframes spin {
   from {
     transform: rotate(deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
-
-
 .bounce-animation {
   animation: bounce ease-in-out infinite;
 }
-
 
 .fade-in-animation {
   animation: fadeIn ease forwards;
 }
 
-
 .spin-animation {
   animation: spin linear infinite;
 }
 
-
 .logo {
   width: auto;
-  &.bounce-animation {
-    animation-duration: 0.5s;  
-    display: inline-block;
-  }
+}
+.logo.bounce-animation {
+  animation-duration: 0.5s;
+  display: inline-block;
 }
 
-.section {
-  &.fade-in-animation {
-    animation-duration: 0.8s; 
-  }
+.section.fade-in-animation {
+  animation-duration: 0.8s;
 }
 
-.icon-football {
-  &.spin-animation {
-    animation-duration: 0.8s;
-  }
+.icon-football.spin-animation {
+  animation-duration: 0.8s;
 }

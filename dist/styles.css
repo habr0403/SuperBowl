@@ -9,8 +9,8 @@
   padding: 50px;
   border: none;
   border-radius: 20px;
-  background-color: hsl(50, 56%, 81%);
-  color: rgb(77, 28, 211);
+  background-color: #eae1b3;
+  color: #4d1cd3;
 }
 .container .btn:hover {
   background-color: black;
@@ -28,5 +28,5 @@
   background-color: "blue" .container .content .reveal-btn;
 }
 .container .content .reveal-btn #ec5b0c hover {
-  background-color: rgb(244, 137, 7);
-}/*# sourceMappingURL=styles.css.map */
+  background-color: #f48907;
+}

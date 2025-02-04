@@ -14,8 +14,7 @@
 
   60% {
     transform: translateY(-15px);
-  }
-}
+  }}
 
 @keyframes fadeIn {
   from {
@@ -41,7 +40,6 @@
 .bounce-animation {
   animation: bounce ease-in-out infinite;
 }
-
 
 .fade-in-animation {
   animation: fadeIn ease forwards;

@@ -2,13 +2,13 @@
   font-family: serif "Arial", sans-serif;
 }
 .container h1 {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   text-align: center;
 }
 .container .btn {
-  padding: 50px;
+  padding: 75px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: #eae1b3;
   color: #4d1cd3;
 }
@@ -21,10 +21,10 @@
   text-align: center;
 }
 .container .content .reveal-btn {
-  padding: 50px;
+  padding: 75px;
   border: none;
-  border-radius: 20px;
-  margin-top: 20px;
+  border-radius: 30px;
+  margin-top: 30px;
   background-color: "blue" .container .content .reveal-btn;
 }
 .container .content .reveal-btn #ec5b0c hover {

@@ -10,7 +10,7 @@
   border: none;
   border-radius: 5px;
   background-color: #ec5b0c;
-  color: rgb(77, 28, 211);
+  color: #4d1cd3;
 }
 .container .btn:hover {
   background-color: black;
@@ -29,4 +29,4 @@
 }
 .container .content .reveal-btn:hover {
   background-color: bisque;
-}/*# sourceMappingURL=styles.css.map */
+}

@@ -7,7 +7,7 @@ $spacing: 20px;
 // Mixins for reusable styles
 @mixin button-styles {
   padding: $spacing * 2.5;
-  border: n4mm ridge rgba(211, 220, 50, .6);
+  border: none;
   border-radius: $spacing / 4;
 }
 
